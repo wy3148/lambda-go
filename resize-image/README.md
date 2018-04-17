@@ -2,10 +2,13 @@
 
 on s3, assume we have two buckets with following names:
 testbucket
+
 testbucket-thumbnail
 
 when we upload an image to s3 bucket 'testbucket', event is triggered to go-lambda function,
-and it will resize the image and write the new thumbnail into another bucket 'testbucket-thumbnail'
+and it will resize the image and write the new thumbnail into another bucket 'testbucket-thumbnail'.
+
+To make it sample code simple, we only support 'jpeg' format in the code.
 
 ## Build linux application
 As aws support to upload go binary application directly, but the application has to be 'linux' compiled.
