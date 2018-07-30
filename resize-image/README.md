@@ -15,6 +15,7 @@ As aws support to upload go binary application directly, but the application has
 So when we build applicaiton, we should build like following,
 
 ```
-GOOS=linux go build main.go -o your_lambda_function_name
+GOOS=linux go build -o your_lambda_function_name main.go
+zip deployment.zip your_lambda_function_name 
 ```
 
